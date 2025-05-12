@@ -9,10 +9,9 @@ import numpy as np
 
 # Import custom modules
 from agents.agent_coordinator import AgentCoordinator
-from voice_commands.voice_processor import VoiceProcessor
 
 # Backend API URL
-BACKEND_URL = "http://localhost:5000/api"
+BACKEND_URL = os.getenv('BACKEND_URL', 'https://risk-assessment-backend.onrender.com/api')
 
 # Set page configuration
 st.set_page_config(
@@ -136,9 +135,6 @@ if 'current_view' not in st.session_state:
     
 if 'selected_level' not in st.session_state:
     st.session_state.selected_level = "Tutti i Livelli"
-    
-if 'voice_processor' not in st.session_state:
-    st.session_state.voice_processor = VoiceProcessor()
 
 # Function to load initial data
 def load_initial_data():
@@ -249,14 +245,13 @@ def main():
         
         # Navigation
         st.subheader("Navigazione")
-        view_options = ["Dashboard", "Gestione Rischi", "Configurazione Agenti", "Comandi Vocali"]
+        view_options = ["Dashboard", "Gestione Rischi", "Configurazione Agenti"]
         
         # Map current view to view options
         view_mapping = {
             "dashboard": "Dashboard",
             "gestione rischi": "Gestione Rischi",
-            "configurazione agenti": "Configurazione Agenti",
-            "comandi vocali": "Comandi Vocali"
+            "configurazione agenti": "Configurazione Agenti"
         }
         
         # Get the current view in the correct format
@@ -301,8 +296,6 @@ def main():
         display_risk_management(initial_data)
     elif st.session_state.current_view == "configurazione agenti":
         display_agent_configuration()
-    elif st.session_state.current_view == "comandi vocali":
-        display_voice_commands()
 
 # Dashboard view
 def display_dashboard():
@@ -650,93 +643,6 @@ def display_agent_configuration():
             json.dump(config, f, indent=2)
         
         st.success("Configurazione agenti salvata con successo!")
-
-# Voice Commands view
-def display_voice_commands():
-    st.header("Comandi Vocali")
-    
-    st.info("""
-    Usa i comandi vocali per controllare l'applicazione di valutazione dei rischi.
-    Clicca il pulsante qui sotto e pronuncia il tuo comando.
-    
-    Esempi di comandi:
-    - "Genera valutazione rischi"
-    - "Mostra dashboard"
-    - "Filtra per livello strategico"
-    - "Mostra rischi principali"
-    """)
-    
-    voice_processor = st.session_state.voice_processor
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        if st.button("Inizia Comando Vocale", use_container_width=True):
-            with st.spinner("In ascolto..."):
-                command = voice_processor.listen_for_command()
-                if command:
-                    st.success(f"Comando rilevato: {command}")
-                    # Process the command
-                    result = voice_processor.process_command(command)
-                    st.write(f"Risultato: {result}")
-                    
-                    # Execute the command
-                    if result["success"]:
-                        action = result["action"]
-                        if action == "show_dashboard":
-                            st.session_state.current_view = "dashboard"
-                            st.experimental_rerun()
-                        elif action == "show_risk_management":
-                            st.session_state.current_view = "gestione rischi"
-                            st.experimental_rerun()
-                        elif action == "show_agent_configuration":
-                            st.session_state.current_view = "configurazione agenti"
-                            st.experimental_rerun()
-                        elif action == "show_voice_commands":
-                            st.session_state.current_view = "comandi vocali"
-                            st.experimental_rerun()
-                        elif action == "filter_strategic":
-                            st.session_state.selected_level = "Strategico"
-                            st.experimental_rerun()
-                        elif action == "filter_project":
-                            st.session_state.selected_level = "Progetto"
-                            st.experimental_rerun()
-                        elif action == "filter_operational":
-                            st.session_state.selected_level = "Operativo"
-                            st.experimental_rerun()
-                        elif action == "show_all_risks":
-                            st.session_state.selected_level = "Tutti i Livelli"
-                            st.experimental_rerun()
-                        elif action == "save_data":
-                            save_risk_data()
-                            st.success("Dati salvati con successo!")
-                        elif action == "generate_risk_assessment":
-                            # Trigger the risk assessment generation
-                            st.session_state.generate_risk = True
-                            st.experimental_rerun()
-                else:
-                    st.error("Impossibile riconoscere il comando. Riprova.")
-    
-    with col2:
-        st.subheader("Comandi Disponibili")
-        st.write("""
-        - "Genera valutazione rischi"
-        - "Mostra dashboard"
-        - "Mostra gestione rischi"
-        - "Mostra configurazione agenti"
-        - "Filtra per livello strategico"
-        - "Filtra per livello progetto"
-        - "Filtra per livello operativo"
-        - "Mostra tutti i rischi"
-        - "Salva i dati"
-        """)
-    
-    st.subheader("Cronologia Comandi")
-    if hasattr(voice_processor, 'command_history') and voice_processor.command_history:
-        for i, (command, timestamp) in enumerate(voice_processor.command_history):
-            st.text(f"{timestamp}: {command}")
-    else:
-        st.write("Nessun comando ancora. Prova a pronunciare un comando!")
 
 if __name__ == "__main__":
     main() 
