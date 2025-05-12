@@ -58,5 +58,9 @@ def delete_risk(risk_id):
     
     return jsonify({"error": "Risk not found"}), 404
 
+@app.route('/api/health')
+def health_check():
+    return jsonify({"status": "healthy"}), 200
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000) 
