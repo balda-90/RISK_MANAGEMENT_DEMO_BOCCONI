@@ -1,0 +1,347 @@
+{
+  "product_range": [
+    {
+      "name": "Luxury Sedan Range",
+      "description": "High-end luxury sedans with premium features",
+      "rischi_strategici": [
+        {
+          "Risk_ID": "RS001",
+          "Level": "strategico",
+          "Project": "Luxury Sedan Range",
+          "Owner": "Strategic Planning Director",
+          "Risk_Title": "Market Segment Disruption",
+          "Risk_Description": "Emergence of new luxury mobility services reducing demand for traditional luxury sedans",
+          "Risk_Probability": 35,
+          "Cost_Impact": 15000000,
+          "Time_Impact": 18,
+          "Detection": 0.6,
+          "Mitigation_Plan": "Develop subscription-based ownership models and mobility services; invest in luxury ride-sharing partnerships"
+        },
+        {
+          "Risk_ID": "RS002",
+          "Level": "strategico",
+          "Project": "Luxury Sedan Range",
+          "Owner": "Compliance Director",
+          "Risk_Title": "Regulatory Compliance",
+          "Risk_Description": "New emissions and safety regulations requiring significant redesign of luxury models",
+          "Risk_Probability": 40,
+          "Cost_Impact": 20000000,
+          "Time_Impact": 24,
+          "Detection": 0.8,
+          "Mitigation_Plan": "Establish regulatory monitoring team; design modular platforms with compliance flexibility"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Model X500",
+          "description": "Flagship luxury sedan with advanced autonomous features",
+          "rischi_progetto": [
+            {
+              "Risk_ID": "RP001",
+              "Level": "progetto",
+              "Project": "Model X500",
+              "Owner": "Project Manager",
+              "Risk_Title": "Autonomous System Integration",
+              "Risk_Description": "Complex integration issues between autonomous driving systems and luxury features",
+              "Risk_Probability": 45,
+              "Cost_Impact": 8000000,
+              "Time_Impact": 12,
+              "Detection": 0.5,
+              "Mitigation_Plan": "Implement phased integration approach; establish dedicated integration team"
+            },
+            {
+              "Risk_ID": "RP002",
+              "Level": "progetto",
+              "Project": "Model X500",
+              "Owner": "Quality Manager",
+              "Risk_Title": "Supplier Quality Issues",
+              "Risk_Description": "Quality inconsistencies in premium component suppliers affecting luxury standards",
+              "Risk_Probability": 30,
+              "Cost_Impact": 5000000,
+              "Time_Impact": 8,
+              "Detection": 0.7,
+              "Mitigation_Plan": "Implement strict supplier quality program; develop backup supplier network"
+            }
+          ],
+          "components": [
+            {
+              "name": "Electric Powertrain",
+              "description": "800V high-performance electric powertrain system",
+              "rischi_operativi": [
+                {
+                  "Risk_ID": "RO001",
+                  "Level": "operativo",
+                  "Project": "Electric Powertrain",
+                  "Owner": "Powertrain Engineer",
+                  "Risk_Title": "Thermal Management Failure",
+                  "Risk_Description": "Inadequate thermal management in high-performance electric powertrain",
+                  "Risk_Probability": 25,
+                  "Cost_Impact": 3000000,
+                  "Time_Impact": 6,
+                  "Detection": 0.8,
+                  "Mitigation_Plan": "Implement advanced thermal monitoring; develop redundant cooling systems"
+                }
+              ]
+            },
+            {
+              "name": "Advanced Driver Assistance System",
+              "description": "Level 3 autonomous driving capability with sensor fusion",
+              "rischi_operativi": [
+                {
+                  "Risk_ID": "RO002",
+                  "Level": "operativo",
+                  "Project": "Advanced Driver Assistance System",
+                  "Owner": "ADAS Engineer",
+                  "Risk_Title": "Sensor Calibration Issues",
+                  "Risk_Description": "Inconsistent sensor calibration affecting autonomous driving performance",
+                  "Risk_Probability": 35,
+                  "Cost_Impact": 2000000,
+                  "Time_Impact": 4,
+                  "Detection": 0.6,
+                  "Mitigation_Plan": "Develop automated calibration system; implement continuous monitoring"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Model S300",
+          "description": "Mid-range luxury sedan with hybrid powertrain",
+          "components": [
+            {
+              "name": "Hybrid Powertrain",
+              "description": "Plug-in hybrid system with 80km electric range"
+            },
+            {
+              "name": "Infotainment System",
+              "description": "Premium entertainment system with augmented reality display"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Performance SUV Range",
+      "description": "High-performance sport utility vehicles",
+      "rischi_strategici": [
+        {
+          "Risk_ID": "RS003",
+          "Level": "strategico",
+          "Project": "Performance SUV Range",
+          "Owner": "Marketing Director",
+          "Risk_Title": "Market Competition",
+          "Risk_Description": "New entrants in performance SUV market with innovative features",
+          "Risk_Probability": 40,
+          "Cost_Impact": 12000000,
+          "Time_Impact": 15,
+          "Detection": 0.7,
+          "Mitigation_Plan": "Accelerate innovation pipeline; strengthen brand positioning"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Velocity X",
+          "description": "Performance-focused electric SUV",
+          "rischi_progetto": [
+            {
+              "Risk_ID": "RP003",
+              "Level": "progetto",
+              "Project": "Velocity X",
+              "Owner": "Battery Systems Manager",
+              "Risk_Title": "Battery Performance",
+              "Risk_Description": "Battery performance not meeting high-performance SUV requirements",
+              "Risk_Probability": 30,
+              "Cost_Impact": 10000000,
+              "Time_Impact": 18,
+              "Detection": 0.6,
+              "Mitigation_Plan": "Develop custom battery solution; implement advanced thermal management"
+            }
+          ],
+          "components": [
+            {
+              "name": "Dual Motor System",
+              "description": "High-output dual electric motor configuration",
+              "rischi_operativi": [
+                {
+                  "Risk_ID": "RO003",
+                  "Level": "operativo",
+                  "Project": "Dual Motor System",
+                  "Owner": "Powertrain Engineer",
+                  "Risk_Title": "Power Distribution",
+                  "Risk_Description": "Inefficient power distribution between dual motors affecting performance",
+                  "Risk_Probability": 25,
+                  "Cost_Impact": 4000000,
+                  "Time_Impact": 8,
+                  "Detection": 0.7,
+                  "Mitigation_Plan": "Implement advanced power management system; optimize motor control algorithms"
+                }
+              ]
+            },
+            {
+              "name": "Adaptive Air Suspension",
+              "description": "Dynamic ride height adjustment system",
+              "rischi_operativi": [
+                {
+                  "Risk_ID": "RO004",
+                  "Level": "operativo",
+                  "Project": "Adaptive Air Suspension",
+                  "Owner": "Chassis Engineer",
+                  "Risk_Title": "System Reliability",
+                  "Risk_Description": "Air suspension system reliability issues in extreme conditions",
+                  "Risk_Probability": 20,
+                  "Cost_Impact": 2500000,
+                  "Time_Impact": 6,
+                  "Detection": 0.8,
+                  "Mitigation_Plan": "Implement enhanced durability testing; develop backup suspension modes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gamma Stellantis - Piattaforme Modulari",
+      "description": "Piattaforme modulari e strategie di gamma trasversali per i brand Stellantis.",
+      "rischi_strategici": [
+        {"Risk_ID": "RS001", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Strategia", "Risk_Title": "Ritardo nell'elettrificazione della gamma", "Risk_Description": "Ritardi nell'adozione di piattaforme full electric rispetto ai competitor.", "Risk_Probability": 40, "Cost_Impact": 25000000, "Time_Impact": 18, "Detection": 0.7, "Mitigation_Plan": "Accelerare investimenti in piattaforme BEV e partnership tecnologiche."},
+        {"Risk_ID": "RS002", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Marketing", "Risk_Title": "Perdita di quote di mercato nei segmenti chiave", "Risk_Description": "Calo della domanda nei segmenti B e C a causa di nuovi competitor asiatici.", "Risk_Probability": 35, "Cost_Impact": 18000000, "Time_Impact": 12, "Detection": 0.6, "Mitigation_Plan": "Rafforzare la value proposition e lanciare nuovi modelli competitivi."},
+        {"Risk_ID": "RS003", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Innovazione", "Risk_Title": "Dipendenza da fornitori di batterie asiatici", "Risk_Description": "Rischio di shortage o aumento prezzi batterie per veicoli elettrici.", "Risk_Probability": 50, "Cost_Impact": 30000000, "Time_Impact": 24, "Detection": 0.5, "Mitigation_Plan": "Sviluppare joint venture locali e alternative di fornitura europea."},
+        {"Risk_ID": "RS004", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Compliance", "Risk_Title": "Nuove normative ambientali stringenti", "Risk_Description": "Introduzione di limiti CO2 e normative Euro 7 più restrittive.", "Risk_Probability": 45, "Cost_Impact": 22000000, "Time_Impact": 20, "Detection": 0.8, "Mitigation_Plan": "Monitoraggio normativo e sviluppo piattaforme flessibili."},
+        {"Risk_ID": "RS005", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Finanza", "Risk_Title": "Aumento costi materie prime", "Risk_Description": "Oscillazioni di prezzo di litio, rame e semiconduttori.", "Risk_Probability": 60, "Cost_Impact": 35000000, "Time_Impact": 10, "Detection": 0.7, "Mitigation_Plan": "Contratti a lungo termine e diversificazione fornitori."},
+        {"Risk_ID": "RS006", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore IT", "Risk_Title": "Cybersecurity e attacchi ai veicoli connessi", "Risk_Description": "Aumento vulnerabilità su piattaforme digitali e HMI.", "Risk_Probability": 30, "Cost_Impact": 12000000, "Time_Impact": 8, "Detection": 0.5, "Mitigation_Plan": "Investire in sistemi di sicurezza e aggiornamenti OTA."},
+        {"Risk_ID": "RS007", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore HR", "Risk_Title": "Difficoltà nel reperire competenze digitali", "Risk_Description": "Carente disponibilità di ingegneri software e AI.", "Risk_Probability": 40, "Cost_Impact": 8000000, "Time_Impact": 14, "Detection": 0.6, "Mitigation_Plan": "Programmi di formazione e partnership con università."},
+        {"Risk_ID": "RS008", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Prodotto", "Risk_Title": "Disallineamento tra brand e piattaforme comuni", "Risk_Description": "Rischio di perdita identità dei brand su piattaforme condivise.", "Risk_Probability": 30, "Cost_Impact": 10000000, "Time_Impact": 10, "Detection": 0.7, "Mitigation_Plan": "Personalizzazione design e dotazioni per ogni brand."},
+        {"Risk_ID": "RS009", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Operations", "Risk_Title": "Interruzioni supply chain globale", "Risk_Description": "Eventi geopolitici o pandemici che bloccano la produzione.", "Risk_Probability": 25, "Cost_Impact": 40000000, "Time_Impact": 30, "Detection": 0.4, "Mitigation_Plan": "Piani di business continuity e fornitori multipli."},
+        {"Risk_ID": "RS010", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Sostenibilità", "Risk_Title": "Reputazione ambientale compromessa", "Risk_Description": "Critiche su sostenibilità reale della gamma e greenwashing.", "Risk_Probability": 20, "Cost_Impact": 6000000, "Time_Impact": 6, "Detection": 0.6, "Mitigation_Plan": "Trasparenza su filiera e comunicazione ESG efficace."},
+        {"Risk_ID": "RS011", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Operations", "Risk_Title": "Blocco improvviso supply chain asiatica", "Risk_Description": "Interruzione improvvisa delle forniture di componenti elettronici dalla Cina.", "Risk_Probability": 80, "Cost_Impact": 25000000, "Time_Impact": 16, "Detection": 0.5, "Mitigation_Plan": "Diversificare fornitori e creare scorte strategiche."},
+        {"Risk_ID": "RS012", "Level": "strategico", "Project": "Gamma Stellantis", "Owner": "Direttore Finanza", "Risk_Title": "Aumento improvviso prezzi energia", "Risk_Description": "Crescita esponenziale dei costi energetici per la produzione europea.", "Risk_Probability": 75, "Cost_Impact": 18000000, "Time_Impact": 8, "Detection": 0.6, "Mitigation_Plan": "Contratti a prezzo fisso e investimenti in energie rinnovabili."}
+      ],
+      "projects": [
+        {
+          "name": "Nuova 500 Elettrica",
+          "description": "City car elettrica di nuova generazione.",
+          "rischi_progetto": [
+            {"Risk_ID": "RP001", "Level": "progetto", "Project": "Nuova 500 Elettrica", "Owner": "Project Manager", "Risk_Title": "Ritardo rilascio software HMI", "Risk_Description": "Problemi di sviluppo e test della nuova interfaccia HMI.", "Risk_Probability": 40, "Cost_Impact": 4000000, "Time_Impact": 8, "Detection": 0.5, "Mitigation_Plan": "Incrementare risorse software e test automatizzati."},
+            {"Risk_ID": "RP002", "Level": "progetto", "Project": "Nuova 500 Elettrica", "Owner": "Quality Manager", "Risk_Title": "Difetti batteria alta tensione", "Risk_Description": "Non conformità nei moduli batteria fornite da terzi.", "Risk_Probability": 30, "Cost_Impact": 6000000, "Time_Impact": 10, "Detection": 0.7, "Mitigation_Plan": "Audit fornitori e test qualità in ingresso."},
+            {"Risk_ID": "RP021", "Level": "progetto", "Project": "Nuova 500 Elettrica", "Owner": "Project Manager", "Risk_Title": "Guasti ricorrenti centralina elettronica", "Risk_Description": "Alta incidenza di guasti sulla centralina di controllo veicolo.", "Risk_Probability": 72, "Cost_Impact": 9000000, "Time_Impact": 10, "Detection": 0.4, "Mitigation_Plan": "Redesign centralina e test di robustezza aggiuntivi."}
+          ],
+          "components": [
+            {
+              "name": "HMI (Human Machine Interface)",
+              "description": "Interfaccia utente digitale avanzata.",
+              "rischi_operativi": [
+                {"Risk_ID": "RO001", "Level": "operativo", "Project": "HMI", "Owner": "HMI Engineer", "Risk_Title": "Bug critici in visualizzazione display", "Risk_Description": "Malfunzionamenti grafici o blocchi del sistema HMI.", "Risk_Probability": 30, "Cost_Impact": 1200000, "Time_Impact": 4, "Detection": 0.6, "Mitigation_Plan": "Test end-to-end e aggiornamenti OTA rapidi."},
+                {"Risk_ID": "RO002", "Level": "operativo", "Project": "HMI", "Owner": "HMI Engineer", "Risk_Title": "Vulnerabilità cyber su HMI connessa", "Risk_Description": "Possibilità di attacchi hacker tramite la connettività HMI.", "Risk_Probability": 20, "Cost_Impact": 2000000, "Time_Impact": 6, "Detection": 0.5, "Mitigation_Plan": "Penetration test e crittografia avanzata."},
+                {"Risk_ID": "RO021", "Level": "operativo", "Project": "HMI", "Owner": "HMI Engineer", "Risk_Title": "Crash frequenti interfaccia touch", "Risk_Description": "Blocchi ripetuti dell'interfaccia touch in condizioni di calore elevato.", "Risk_Probability": 70, "Cost_Impact": 5000000, "Time_Impact": 6, "Detection": 0.5, "Mitigation_Plan": "Test termici approfonditi e miglioramento dissipazione calore."}
+              ]
+            },
+            {
+              "name": "Linea di scarico",
+              "description": "Sistema di scarico e post-trattamento gas.",
+              "rischi_operativi": [
+                {"Risk_ID": "RO003", "Level": "operativo", "Project": "Linea di scarico", "Owner": "Powertrain Engineer", "Risk_Title": "Corrosione prematura tubazioni", "Risk_Description": "Materiali non conformi causano corrosione anticipata.", "Risk_Probability": 25, "Cost_Impact": 800000, "Time_Impact": 3, "Detection": 0.7, "Mitigation_Plan": "Controlli qualità materiali e test accelerati."},
+                {"Risk_ID": "RO004", "Level": "operativo", "Project": "Linea di scarico", "Owner": "Powertrain Engineer", "Risk_Title": "Rumorosità eccessiva", "Risk_Description": "Problemi di isolamento acustico nel sistema di scarico.", "Risk_Probability": 20, "Cost_Impact": 500000, "Time_Impact": 2, "Detection": 0.8, "Mitigation_Plan": "Test NVH e materiali fonoassorbenti migliorati."},
+                {"Risk_ID": "RO022", "Level": "operativo", "Project": "Linea di scarico", "Owner": "Powertrain Engineer", "Risk_Title": "Rottura collettore scarico", "Risk_Description": "Alta frequenza di rotture del collettore in condizioni di stress.", "Risk_Probability": 74, "Cost_Impact": 6000000, "Time_Impact": 5, "Detection": 0.6, "Mitigation_Plan": "Materiali rinforzati e controlli qualità aggiuntivi."}
+              ]
+            },
+            {
+              "name": "Cablaggi",
+              "description": "Sistema di cablaggio elettrico vettura.",
+              "rischi_operativi": [
+                {"Risk_ID": "RO005", "Level": "operativo", "Project": "Cablaggi", "Owner": "Electrical Engineer", "Risk_Title": "Corto circuito in zona cruscotto", "Risk_Description": "Difetti di isolamento nei cablaggi zona HMI.", "Risk_Probability": 18, "Cost_Impact": 400000, "Time_Impact": 2, "Detection": 0.7, "Mitigation_Plan": "Test elettrici e ispezioni visive in linea."},
+                {"Risk_ID": "RO006", "Level": "operativo", "Project": "Cablaggi", "Owner": "Electrical Engineer", "Risk_Title": "Difficoltà montaggio cablaggi modulari", "Risk_Description": "Errori di assemblaggio dovuti a layout complesso.", "Risk_Probability": 22, "Cost_Impact": 350000, "Time_Impact": 2, "Detection": 0.6, "Mitigation_Plan": "Formazione operatori e guide di montaggio digitali."},
+                {"Risk_ID": "RO023", "Level": "operativo", "Project": "Cablaggi", "Owner": "Electrical Engineer", "Risk_Title": "Corto circuito ricorrente", "Risk_Description": "Corto circuito frequente in zona vano motore per usura isolante.", "Risk_Probability": 80, "Cost_Impact": 5500000, "Time_Impact": 4, "Detection": 0.4, "Mitigation_Plan": "Nuovi materiali isolanti e ispezioni periodiche."}
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Jeep Avenger",
+          "description": "SUV compatto elettrico per il mercato europeo.",
+          "rischi_progetto": [
+            {"Risk_ID": "RP003", "Level": "progetto", "Project": "Jeep Avenger", "Owner": "Project Manager", "Risk_Title": "Ritardi omologazione ADAS", "Risk_Description": "Problemi di certificazione sistemi ADAS di livello 2+.", "Risk_Probability": 35, "Cost_Impact": 3500000, "Time_Impact": 6, "Detection": 0.6, "Mitigation_Plan": "Collaborazione con enti certificatori e test anticipati."},
+            {"Risk_ID": "RP004", "Level": "progetto", "Project": "Jeep Avenger", "Owner": "Quality Manager", "Risk_Title": "Difetti produzione batterie", "Risk_Description": "Non conformità nei processi produttivi delle celle batteria.", "Risk_Probability": 28, "Cost_Impact": 5000000, "Time_Impact": 8, "Detection": 0.7, "Mitigation_Plan": "Audit fornitori e controlli qualità in linea."},
+            {"Risk_ID": "RP022", "Level": "progetto", "Project": "Jeep Avenger", "Owner": "Quality Manager", "Risk_Title": "Difetti di assemblaggio in linea", "Risk_Description": "Errori frequenti durante l'assemblaggio automatizzato in fabbrica.", "Risk_Probability": 78, "Cost_Impact": 7000000, "Time_Impact": 7, "Detection": 0.5, "Mitigation_Plan": "Formazione operatori e manutenzione predittiva delle linee."}
+          ],
+          "components": [
+            {
+              "name": "ADAS",
+              "description": "Sistemi avanzati di assistenza alla guida.",
+              "rischi_operativi": [
+                {"Risk_ID": "RO007", "Level": "operativo", "Project": "ADAS", "Owner": "ADAS Engineer", "Risk_Title": "Falsi positivi frenata automatica", "Risk_Description": "Attivazione non necessaria della frenata automatica d'emergenza.", "Risk_Probability": 15, "Cost_Impact": 600000, "Time_Impact": 2, "Detection": 0.6, "Mitigation_Plan": "Aggiornamento algoritmi e test in condizioni reali."},
+                {"Risk_ID": "RO008", "Level": "operativo", "Project": "ADAS", "Owner": "ADAS Engineer", "Risk_Title": "Malfunzionamento sensori laterali", "Risk_Description": "Errori di rilevamento ostacoli in manovra.", "Risk_Probability": 12, "Cost_Impact": 300000, "Time_Impact": 1, "Detection": 0.7, "Mitigation_Plan": "Test sensori e calibrazione automatica."},
+                {"Risk_ID": "RO024", "Level": "operativo", "Project": "ADAS", "Owner": "ADAS Engineer", "Risk_Title": "Malfunzionamento sensori pioggia", "Risk_Description": "Sensori pioggia non funzionano correttamente in condizioni di sporco intenso.", "Risk_Probability": 77, "Cost_Impact": 5200000, "Time_Impact": 3, "Detection": 0.5, "Mitigation_Plan": "Aggiornamento software e protezioni fisiche ai sensori."}
+              ]
+            },
+            {
+              "name": "Infotainment",
+              "description": "Sistema di infotainment connesso di nuova generazione.",
+              "rischi_operativi": [
+                {"Risk_ID": "RO009", "Level": "operativo", "Project": "Infotainment", "Owner": "Infotainment Engineer", "Risk_Title": "Crash software durante navigazione", "Risk_Description": "Blocchi improvvisi del sistema durante l'uso della navigazione.", "Risk_Probability": 20, "Cost_Impact": 700000, "Time_Impact": 2, "Detection": 0.5, "Mitigation_Plan": "Debug software e rilascio patch frequenti."},
+                {"Risk_ID": "RO010", "Level": "operativo", "Project": "Infotainment", "Owner": "Infotainment Engineer", "Risk_Title": "Problemi connettività Bluetooth", "Risk_Description": "Difficoltà di pairing e stabilità connessione con smartphone.", "Risk_Probability": 18, "Cost_Impact": 200000, "Time_Impact": 1, "Detection": 0.7, "Mitigation_Plan": "Test compatibilità e aggiornamenti firmware."},
+                {"Risk_ID": "RO025", "Level": "operativo", "Project": "Infotainment", "Owner": "Infotainment Engineer", "Risk_Title": "Perdita dati navigazione", "Risk_Description": "Perdita frequente dei dati di navigazione durante aggiornamenti OTA.", "Risk_Probability": 73, "Cost_Impact": 6500000, "Time_Impact": 4, "Detection": 0.5, "Mitigation_Plan": "Backup automatico dati e rollback sicuro degli aggiornamenti."}
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Piattaforma STLA Medium",
+          "description": "Piattaforma modulare per veicoli segmento C-D.",
+          "rischi_progetto": [
+            {"Risk_ID": "RP005", "Level": "progetto", "Project": "STLA Medium", "Owner": "Project Manager", "Risk_Title": "Ritardi sviluppo architettura elettronica", "Risk_Description": "Problemi di integrazione tra centraline e software di bordo.", "Risk_Probability": 32, "Cost_Impact": 7000000, "Time_Impact": 10, "Detection": 0.5, "Mitigation_Plan": "Task force di integrazione e simulazioni virtuali."},
+            {"Risk_ID": "RP006", "Level": "progetto", "Project": "STLA Medium", "Owner": "Quality Manager", "Risk_Title": "Difetti produzione piattaforma", "Risk_Description": "Non conformità nei processi produttivi della piattaforma.", "Risk_Probability": 25, "Cost_Impact": 6000000, "Time_Impact": 8, "Detection": 0.7, "Mitigation_Plan": "Audit fornitori e controlli qualità in linea."},
+            {"Risk_ID": "RP023", "Level": "progetto", "Project": "STLA Medium", "Owner": "Project Manager", "Risk_Title": "Ritardi software di bordo", "Risk_Description": "Ritardi cronici nello sviluppo e rilascio degli aggiornamenti software.", "Risk_Probability": 85, "Cost_Impact": 12000000, "Time_Impact": 12, "Detection": 0.3, "Mitigation_Plan": "Aumentare risorse software e adottare metodologie Agile."}
+          ],
+          "components": [
+            {
+              "name": "Powertrain Elettrico",
+              "description": "Motore elettrico e sistema di gestione batteria.",
+              "rischi_operativi": [
+                {"Risk_ID": "RO011", "Level": "operativo", "Project": "Powertrain Elettrico", "Owner": "Powertrain Engineer", "Risk_Title": "Surriscaldamento inverter", "Risk_Description": "Temperature elevate durante carichi prolungati.", "Risk_Probability": 22, "Cost_Impact": 900000, "Time_Impact": 3, "Detection": 0.6, "Mitigation_Plan": "Sistema di raffreddamento potenziato e sensori temperatura."},
+                {"Risk_ID": "RO012", "Level": "operativo", "Project": "Powertrain Elettrico", "Owner": "Powertrain Engineer", "Risk_Title": "Degrado celle batteria accelerato", "Risk_Description": "Riduzione autonomia per usura prematura delle celle.", "Risk_Probability": 18, "Cost_Impact": 1200000, "Time_Impact": 4, "Detection": 0.7, "Mitigation_Plan": "Monitoraggio stato salute batteria e algoritmi predittivi."}
+              ]
+            },
+            {
+              "name": "Sistemi di Sicurezza",
+              "description": "Airbag, sensori e sistemi di sicurezza passiva.",
+              "rischi_operativi": [
+                {"Risk_ID": "RO013", "Level": "operativo", "Project": "Sistemi di Sicurezza", "Owner": "Safety Engineer", "Risk_Title": "Difetti attivazione airbag", "Risk_Description": "Possibile mancata attivazione in caso di incidente.", "Risk_Probability": 10, "Cost_Impact": 1500000, "Time_Impact": 2, "Detection": 0.8, "Mitigation_Plan": "Test crash e controlli elettronici ridondanti."},
+                {"Risk_ID": "RO014", "Level": "operativo", "Project": "Sistemi di Sicurezza", "Owner": "Safety Engineer", "Risk_Title": "Falsi allarmi sensori collisione", "Risk_Description": "Attivazione non necessaria dei sistemi di sicurezza.", "Risk_Probability": 12, "Cost_Impact": 500000, "Time_Impact": 1, "Detection": 0.7, "Mitigation_Plan": "Aggiornamento software e calibrazione sensori."}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "risk_categories": {
+    "strategic": {
+      "description": "High-level risks affecting the entire product range or company strategy",
+      "focus_areas": [
+        "Market dynamics",
+        "Regulatory compliance",
+        "Competitive landscape",
+        "Brand positioning"
+      ]
+    },
+    "project": {
+      "description": "Risks specific to individual vehicle development projects",
+      "focus_areas": [
+        "Technical integration",
+        "Supplier management",
+        "Resource allocation",
+        "Schedule management"
+      ]
+    },
+    "operational": {
+      "description": "Risks related to specific components or systems",
+      "focus_areas": [
+        "Component reliability",
+        "Manufacturing processes",
+        "Quality control",
+        "System integration"
+      ]
+    }
+  }
+} 

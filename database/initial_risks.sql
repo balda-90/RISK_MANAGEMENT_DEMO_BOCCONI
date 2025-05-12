@@ -1,0 +1,28 @@
+-- Initial risk data for automotive industry
+-- Strategic Level Risks
+INSERT INTO risks (risk_id, level, project, risk_title, risk_description, risk_probability, cost_impact, time_impact, detection, mitigation_plan, owner, created_at, updated_at) VALUES
+('R001', 'strategic', 'Electric Vehicle Line', 'Market Demand Shift', 'Significant decline in market demand for electric vehicles due to economic downturn or changing consumer preferences.', 0.4, 5000000, 12, 0.7, 'Implement flexible manufacturing platforms that can quickly adapt to different models; conduct quarterly market analysis to anticipate shifts.', 'Strategic Planning Team', NOW(), NOW()),
+('R002', 'strategic', 'Electric Vehicle Line', 'Regulatory Compliance Failure', 'Failure to meet new emissions or safety regulations affecting electric vehicle production.', 0.35, 8000000, 16, 0.8, 'Establish a dedicated regulatory affairs team for continuous monitoring; build compliance margins into designs.', 'Compliance Team', NOW(), NOW()),
+('R003', 'strategic', 'Electric Vehicle Line', 'Competitive Technology Disruption', 'Competitors introduce disruptive technology making our electric vehicles less competitive.', 0.3, 10000000, 24, 0.5, 'Increase R&D investment; establish technology scouting team; build strategic partnerships with tech companies.', 'R&D Team', NOW(), NOW()),
+
+-- Project Level Risks
+('R004', 'project', 'Battery Development', 'Supply Chain Disruption', 'Critical component shortage affecting battery production timeline.', 0.45, 2000000, 8, 0.6, 'Dual-source critical components; increase safety stock levels; develop contingency plans for each tier-1 supplier.', 'Supply Chain Manager', NOW(), NOW()),
+('R005', 'project', 'Battery Development', 'Quality Control Issues', 'Unforeseen quality issues discovered during battery production ramp-up.', 0.4, 1500000, 6, 0.7, 'Implement advanced statistical process control; increase prototype testing; enhance supplier quality management program.', 'Quality Manager', NOW(), NOW()),
+('R006', 'project', 'Battery Development', 'Resource Allocation Conflicts', 'Engineering resources diverted from battery development to higher priority projects.', 0.5, 1000000, 10, 0.8, 'Implement formal resource allocation process; establish clear project priorities; develop cross-training program for critical skills.', 'Project Manager', NOW(), NOW()),
+
+-- Operational Level Risks
+('R007', 'operational', 'Battery Assembly Line', 'Manufacturing Process Variation', 'Excessive variation in battery assembly process leading to inconsistent quality.', 0.6, 800000, 4, 0.7, 'Implement Six Sigma process control; increase operator training; install vision systems for real-time inspection.', 'Production Manager', NOW(), NOW()),
+('R008', 'operational', 'Battery Assembly Line', 'Test Equipment Failure', 'Critical test equipment failure affecting battery validation timeline.', 0.3, 500000, 3, 0.9, 'Implement preventive maintenance program; maintain backup test equipment; qualify alternative test methods.', 'Test Engineer', NOW(), NOW()),
+('R009', 'operational', 'Battery Assembly Line', 'Software Integration Issues', 'Software integration problems between battery management system and vehicle systems.', 0.55, 1200000, 6, 0.6, 'Increase software integration testing earlier in development; improve requirements management; implement continuous integration practices.', 'Software Engineer', NOW(), NOW()),
+
+-- Additional Strategic Risks
+('R010', 'strategic', 'Autonomous Driving', 'Regulatory Approval Delays', 'Delays in obtaining regulatory approval for autonomous driving features.', 0.4, 15000000, 18, 0.6, 'Engage with regulatory bodies early; develop comprehensive safety documentation; create parallel development paths for different regulatory scenarios.', 'Regulatory Affairs Manager', NOW(), NOW()),
+('R011', 'strategic', 'Autonomous Driving', 'Public Trust Issues', 'Loss of public trust in autonomous driving technology due to safety incidents.', 0.3, 20000000, 24, 0.7, 'Implement transparent safety reporting; engage in public education campaigns; develop robust safety monitoring systems.', 'Public Relations Manager', NOW(), NOW()),
+
+-- Additional Project Risks
+('R012', 'project', 'Autonomous Driving Software', 'AI Model Performance Issues', 'AI models not meeting required performance metrics in real-world conditions.', 0.45, 5000000, 12, 0.5, 'Implement comprehensive testing in diverse conditions; develop fallback systems; establish continuous learning pipeline.', 'AI Team Lead', NOW(), NOW()),
+('R013', 'project', 'Autonomous Driving Software', 'Integration Complexity', 'Complex integration issues between autonomous driving software and vehicle hardware.', 0.5, 3000000, 8, 0.6, 'Implement modular architecture; conduct regular integration testing; maintain detailed interface documentation.', 'Systems Architect', NOW(), NOW()),
+
+-- Additional Operational Risks
+('R014', 'operational', 'Sensor Calibration', 'Environmental Interference', 'Environmental factors affecting sensor calibration accuracy.', 0.4, 800000, 4, 0.7, 'Develop robust calibration procedures; implement environmental monitoring; create adaptive calibration algorithms.', 'Calibration Engineer', NOW(), NOW()),
+('R015', 'operational', 'Sensor Calibration', 'Production Line Bottlenecks', 'Calibration process creating bottlenecks in production line.', 0.5, 1000000, 6, 0.8, 'Optimize calibration workflow; implement parallel processing; automate routine calibration tasks.', 'Production Engineer', NOW(), NOW()); 
